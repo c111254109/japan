@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本關西 6 天 5 夜之旅</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f3f4f6; padding-bottom: 40px; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .timeline-line { position: absolute; left: 24px; top: 30px; bottom: -20px; width: 2px; background-color: #e5e7eb; z-index: 0; }
+        .timeline-item:last-child .timeline-line { display: none; }
+        /* 頁面切換特效 */
+        .day-content { display: none; animation: fadeIn 0.4s ease-in-out; }
+        #content-D1 { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+        /* 按鈕激活樣式 */
+        .active-btn { background-color: white !important; color: #4338ca !important; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transform: scale(1.05); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-6 rounded-b-3xl shadow-lg sticky top-0 z-50">
+        <div class="flex justify-between items-start mb-4">
+            <div>
+                <h1 class="text-2xl font-bold">日本關西之旅</h1>
+                <p class="text-indigo-200 text-sm mt-1">Jan 26 - Jan 31, 2025</p>
+            </div>
+            <div class="bg-white/20 p-2 rounded-lg backdrop-blur-sm"><i class="fas fa-map text-white"></i></div>
+        </div>
+        <div class="flex space-x-3 overflow-x-auto no-scrollbar pt-2 pb-1" id="nav-container">
+            <button onclick="switchDay('D1', this)" class="active-btn bg-white/20 text-white hover:bg-white/30 min-w-[60px] p-2 rounded-xl flex flex-col items-center transition-all"><span class="text-xs">1/26</span><span class="text-lg">D1</span></button>
+            <button onclick="switchDay('D2', this)" class="bg-white/20 text-white hover:bg-white/30 min-w-[60px] p-2 rounded-xl flex flex-col items-center transition-all"><span class="text-xs">1/27</span><span class="text-lg">D2</span></button>
+            <button onclick="switchDay('D3', this)" class="bg-white/20 text-white hover:bg-white/30 min-w-[60px] p-2 rounded-xl flex flex-col items-center transition-all"><span class="text-xs">1/28</span><span class="text-lg">D3</span></button>
+            <button onclick="switchDay('D4', this)" class="bg-white/20 text-white hover:bg-white/30 min-w-[60px] p-2 rounded-xl flex flex-col items-center transition-all"><span class="text-xs">1/29</span><span class="text-lg">D4</span></button>
+            <button onclick="switchDay('D5', this)" class="bg-white/20 text-white hover:bg-white/30 min-w-[60px] p-2 rounded-xl flex flex-col items-center transition-all"><span class="text-xs">1/30</span><span class="text-lg">D5</span></button>
+            <button onclick="switchDay('D6', this)" class="bg-white/20 text-white hover:bg-white/30 min-w-[60px] p-2 rounded-xl flex flex-col items-center transition-all"><span class="text-xs">1/31</span><span class="text-lg">D6</span></button>
+        </div>
+    </div>
+
+    <div class="max-w-md mx-auto px-4 mt-6">
+
+        <div id="content-D1" class="day-content">
+            <div class="mb-4 ml-2 text-gray-500 text-sm font-medium"><i class="far fa-calendar-alt mr-2"></i>1/26 (一) 行程</div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">14:45</div><h3 class="font-bold text-gray-800 text-lg">高雄起飛</h3><div class="text-gray-500 text-sm"><i class="fas fa-plane mr-1"></i>小港機場</div></div>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">18:30</div><h3 class="font-bold text-gray-800 text-lg">抵達大阪</h3><div class="text-gray-500 text-sm"><i class="fas fa-plane-arrival mr-1"></i>關西機場</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">日本時差快 1 小時</div></div>
+                    <a href="https://goo.gl/maps/KIX" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">19:30</div><h3 class="font-bold text-gray-800 text-lg">直達民宿</h3><div class="text-gray-500 text-sm"><i class="fas fa-car mr-1"></i>京都民宿</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">專車接送 | 晚餐:便利商店</div></div>
+                    <a href="https://maps.app.goo.gl/3MFRvcu8vbqK7HvG8?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">20:30</div><h3 class="font-bold text-gray-800 text-lg">晚間活動</h3><div class="text-gray-500 text-sm"><i class="fas fa-bed mr-1"></i>民宿/京都塔</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">Skyway 10F (至22:00)</div></div>
+                    <a href="https://maps.app.goo.gl/3MFRvcu8vbqK7HvG8?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-D2" class="day-content">
+            <div class="mb-4 ml-2 text-gray-500 text-sm font-medium"><i class="far fa-calendar-alt mr-2"></i>1/27 (二) 行程</div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">06:30</div><h3 class="font-bold text-gray-800 text-lg">清水寺</h3><div class="text-gray-500 text-sm"><i class="fas fa-torii-gate mr-1"></i>清水寺</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">★搭乘 Uber 約4分鐘</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=清水寺" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">09:00</div><h3 class="font-bold text-gray-800 text-lg">二年坂三年坂</h3><div class="text-gray-500 text-sm"><i class="fas fa-walking mr-1"></i>清水寺周邊</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=三年坂" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">11:00</div><h3 class="font-bold text-gray-800 text-lg">午餐</h3><div class="text-gray-500 text-sm"><i class="fas fa-utensils mr-1"></i>米料亭 八代目儀兵衛</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=米料亭+八代目儀兵衛" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">13:30</div><h3 class="font-bold text-gray-800 text-lg">祇園散策</h3><div class="text-gray-500 text-sm"><i class="fas fa-camera mr-1"></i>八坂神社、花間小路</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=八坂神社" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">17:30</div><h3 class="font-bold text-gray-800 text-lg">晚餐</h3><div class="text-gray-500 text-sm"><i class="fas fa-bowl-food mr-1"></i>麵屋 豬一</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=麵屋+豬一" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">20:00</div><h3 class="font-bold text-gray-800 text-lg">返回民宿</h3><div class="text-gray-500 text-sm"><i class="fas fa-house mr-1"></i>京都民宿</div></div>
+                    <a href="https://maps.app.goo.gl/3MFRvcu8vbqK7HvG8?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-D3" class="day-content">
+            <div class="mb-4 ml-2 text-gray-500 text-sm font-medium"><i class="far fa-calendar-alt mr-2"></i>1/28 (三) 行程</div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">08:00</div><h3 class="font-bold text-gray-800 text-lg">包車出發</h3><div class="text-gray-500 text-sm"><i class="fas fa-car mr-1"></i>京都 -> 大阪</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">今日全日包車</div></div>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">09:00</div><h3 class="font-bold text-gray-800 text-lg">勝尾寺</h3><div class="text-gray-500 text-sm"><i class="fas fa-dharmachakra mr-1"></i>勝尾寺</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">達摩不倒翁 | 門票500¥</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=勝尾寺" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">12:00</div><h3 class="font-bold text-gray-800 text-lg">午餐</h3><div class="text-gray-500 text-sm"><i class="fas fa-utensils mr-1"></i>Onigiri Gorichan (飯糰)</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Onigiri+Gorichan" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">14:30</div><h3 class="font-bold text-gray-800 text-lg">大鳥大社</h3><div class="text-gray-500 text-sm"><i class="fas fa-torii-gate mr-1"></i>大鳥大社</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">御守販售至 16:30</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=大鳥大社" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">17:00</div><h3 class="font-bold text-gray-800 text-lg">放行李</h3><div class="text-gray-500 text-sm"><i class="fas fa-suitcase mr-1"></i>大阪民宿</div></div>
+                    <a href="https://maps.app.goo.gl/mVTQYGEptkoK7R476?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">18:00</div><h3 class="font-bold text-gray-800 text-lg">晚餐方案 1</h3><div class="text-gray-500 text-sm"><i class="fas fa-utensils mr-1"></i>Sushi Sakaba Sashisu</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">★包車於此結束</div></div>
+                    <a href="https://maps.app.goo.gl/25cDPgecXA5MRdj19?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">18:00</div><h3 class="font-bold text-gray-800 text-lg">晚餐方案 2</h3><div class="text-gray-500 text-sm"><i class="fas fa-utensils mr-1"></i>Tonkatsu New Babe</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">★包車於此結束</div></div>
+                    <a href="https://maps.app.goo.gl/WzHuYaBzj4fF6qyD8?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">20:00</div><h3 class="font-bold text-gray-800 text-lg">返回民宿</h3><div class="text-gray-500 text-sm"><i class="fas fa-train mr-1"></i>大眾運輸回民宿</div></div>
+                    <a href="https://maps.app.goo.gl/mVTQYGEptkoK7R476?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-D4" class="day-content">
+            <div class="mb-4 ml-2 text-gray-500 text-sm font-medium"><i class="far fa-calendar-alt mr-2"></i>1/29 (四) 行程</div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">09:30</div><h3 class="font-bold text-gray-800 text-lg">大阪城</h3><div class="text-gray-500 text-sm"><i class="fas fa-chess-rook mr-1"></i>大阪城公園</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">小火車 400¥ (只收現金)</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=大阪城" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">12:00</div><h3 class="font-bold text-gray-800 text-lg">午餐</h3><div class="text-gray-500 text-sm"><i class="fas fa-bowl-food mr-1"></i>一蘭拉麵</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=一蘭拉麵" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">14:00</div><h3 class="font-bold text-gray-800 text-lg">購物</h3><div class="text-gray-500 text-sm"><i class="fas fa-bag-shopping mr-1"></i>心齋橋商圈</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">必吃：Rikuro老爺爺蛋糕</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=心齋橋筋商店街" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">18:00</div><h3 class="font-bold text-gray-800 text-lg">晚餐</h3><div class="text-gray-500 text-sm"><i class="fas fa-fire mr-1"></i>板前燒肉 一斗</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=板前燒肉+一斗+東心齋橋店+本館" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">20:00</div><h3 class="font-bold text-gray-800 text-lg">返回民宿</h3><div class="text-gray-500 text-sm"><i class="fas fa-house mr-1"></i>大阪民宿</div></div>
+                    <a href="https://maps.app.goo.gl/mVTQYGEptkoK7R476?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-D5" class="day-content">
+            <div class="mb-4 ml-2 text-gray-500 text-sm font-medium"><i class="far fa-calendar-alt mr-2"></i>1/30 (五) 行程</div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">09:00</div><h3 class="font-bold text-gray-800 text-lg">前往奈良</h3><div class="text-gray-500 text-sm"><i class="fas fa-train mr-1"></i>天下茶屋->近鐵奈良</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=近鐵奈良站" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">10:00</div><h3 class="font-bold text-gray-800 text-lg">奈良公園</h3><div class="text-gray-500 text-sm"><i class="fas fa-paw mr-1"></i>奈良公園</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">與小鹿互動</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=奈良公園" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">12:30</div><h3 class="font-bold text-gray-800 text-lg">午餐</h3><div class="text-gray-500 text-sm"><i class="fas fa-utensils mr-1"></i>YUKI 亭 (日式洋食)</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=YUKI亭+奈良" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">13:30</div><h3 class="font-bold text-gray-800 text-lg">前往梅田</h3><div class="text-gray-500 text-sm"><i class="fas fa-train mr-1"></i>近鐵奈良->西梅田</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=西梅田站" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">16:00</div><h3 class="font-bold text-gray-800 text-lg">下午茶</h3><div class="text-gray-500 text-sm"><i class="fas fa-cookie mr-1"></i>grenier Umeda</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=grenier+Umeda" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">18:00</div><h3 class="font-bold text-gray-800 text-lg">晚餐</h3><div class="text-gray-500 text-sm"><i class="fas fa-utensils mr-1"></i>Moritaya 壽喜燒</div></div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Moritaya+壽喜燒" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">20:00</div><h3 class="font-bold text-gray-800 text-lg">返回民宿</h3><div class="text-gray-500 text-sm"><i class="fas fa-house mr-1"></i>大阪民宿</div></div>
+                    <a href="https://maps.app.goo.gl/mVTQYGEptkoK7R476?g_st=ipc" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-D6" class="day-content">
+            <div class="mb-4 ml-2 text-gray-500 text-sm font-medium"><i class="far fa-calendar-alt mr-2"></i>1/31 (六) 行程</div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">08:30</div><h3 class="font-bold text-gray-800 text-lg">退房</h3><div class="text-gray-500 text-sm"><i class="fas fa-suitcase mr-1"></i>大阪民宿</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">整理行李準備前往機場</div></div>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">09:00</div><h3 class="font-bold text-gray-800 text-lg">前往機場</h3><div class="text-gray-500 text-sm"><i class="fas fa-train mr-1"></i>關西國際機場</div><div class="text-gray-400 text-xs bg-gray-50 p-2 mt-1 rounded">建議起飛前 2 小時抵達</div></div>
+                    <a href="https://goo.gl/maps/KIX" target="_blank" class="ml-3 mt-1 w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fas fa-location-arrow"></i></a>
+                </div>
+            </div>
+            <div class="timeline-item relative pl-12 pb-8">
+                <div class="timeline-line"></div><div class="absolute left-0 top-0 w-12 flex justify-center"><div class="w-3 h-3 bg-indigo-500 rounded-full ring-4 ring-indigo-100 mt-6 z-10"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-start">
+                    <div><div class="text-indigo-600 font-bold text-lg">11:05</div><h3 class="font-bold text-gray-800 text-lg">回程</h3><div class="text-gray-500 text-sm"><i class="fas fa-plane-departure mr-1"></i>飛往高雄</div></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function switchDay(dayId, btn) {
+            document.querySelectorAll('.day-content').forEach(el => el.style.display = 'none');
+            document.getElementById('content-' + dayId).style.display = 'block';
+            document.querySelectorAll('button').forEach(b => b.classList.remove('active-btn'));
+            if(btn) btn.classList.add('active-btn');
+        }
+    </script>
+</body>
+</html>
